@@ -1,5 +1,6 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import { AppBar } from "@/components/navigation/app-bar";
+import { Toaster } from "sonner";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -26,6 +27,7 @@ export default function RootLayout({ children }) {
         <AppBar />
 
         {children}
+        <Toaster richColors />
       </body>
     </html>
   );
